@@ -7,13 +7,13 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <div className='w-screen h-auto flex flex-col bg-primary'>
         <Header></Header>
         <main className='mt-24 p-8 w-full'>
           <Routes>
             <Route path='/*' element={<MainContainer></MainContainer>}></Route>
-            <Route path='/createItem' element={<CreateContainer></CreateContainer>}></Route>
+            <Route path='/CreateContainer' element={<CreateContainer></CreateContainer>}></Route>
           </Routes>
         </main>
       </div>

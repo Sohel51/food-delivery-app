@@ -10,7 +10,7 @@ function App() {
     <AnimatePresence exitBeforeEnter>
       <div className='w-screen h-auto flex flex-col bg-primary'>
         <Header></Header>
-        <main className='mt-24 p-8 w-full'>
+        <main className='mt-14 md:mt-20 p-5 md:px-16 md:py- w-full'>
           <Routes>
             <Route path='/*' element={<MainContainer></MainContainer>}></Route>
             <Route path='/CreateContainer' element={<CreateContainer></CreateContainer>}></Route>

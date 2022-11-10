@@ -1,6 +1,7 @@
 import React from 'react'
 import Delivery from '../Images/delivery.png';
 import HeroBg from '../Images/heroBg.png';
+import { heroData } from '../utils/data';
 
 const HomeContainer = () => {
     return (
@@ -23,10 +24,22 @@ const HomeContainer = () => {
                     Order Now
                 </button>
             </div>
-            <div className='py-2 flex-1 flex items-center'>
-                <img src={HeroBg} className='ml-auto h-420 w-full lg:w-auto lg:h-600' alt="Right Container Background img" />
+            <div className='py-2 flex-1 flex items-center relative'>
+                <img src={HeroBg} className='ml-auto h-420 w-full lg:w-auto lg:h-650' alt="Right Container Background img" />
+
+                <div className="w-full h-full absolute top-0 left-0 flex flex-wrap items-center justify-center py-4 gap-8 lg:gap-8">
+                    {heroData && heroData.map(n => (
+                        <div key={n.id} className=' lg:w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
+                            <img src={n.imageSrc} className="w-20 lg:w-40 -mt-10 lg:-mt-20" alt="Icecream" />
+                            <p className='text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4'>{n.name}</p>
+                            <p className='text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3'>{n.descp}</p>
+                            <p className='text-sm font-semibold text-headingColor'>
+                                <span className='text-xs text-red-600'>$</span> {n.price}
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className='w-full h-full absolute flex items-center justify-center'></div>
         </section>
     );
 };

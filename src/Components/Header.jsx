@@ -57,10 +57,10 @@ const Header = () => {
         {/* navbar text */}
         <div className='flex items-center gap-8'>
           <ul className="flex items-center gap-8">
-            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer'>Menu</li>
-            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer'>About Us</li>
-            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer'>Srvices</li>
-            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer'>Home</li>
+            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Menu</li>
+            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>About Us</li>
+            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Srvices</li>
+            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Home</li>
           </ul>
 
           {/* insert a icon & input it top */}
@@ -88,7 +88,7 @@ const Header = () => {
                   {
                     user && user.email === "sohelcutyy@gmail.com" && (
                       <Link to={'/CreateContainer'}>
-                        <p className='px-4 py-2 flex items-center justify-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base'>
+                        <p className='px-4 py-2 flex items-center justify-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base' onClick={() => setisMenu(false)}>
                           New Item <MdAdd />
                         </p>
                       </Link>
@@ -117,7 +117,7 @@ const Header = () => {
           <img src={Logo} alt="logo" className="w-8 object-cover" />
           <p className='text-headingColor text-xl font-bold'>City</p>
         </Link>
-        
+
         <div className='relative'>
           <motion.img
             whileTap={{ scale: 0.6 }}

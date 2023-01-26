@@ -59,8 +59,8 @@ const Header = () => {
           <ul className="flex items-center gap-8">
             <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Menu</li>
             <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>About Us</li>
-            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Srvices</li>
-            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Home</li>
+            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}>Services</li>
+            <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer' onClick={() => setisMenu(false)}><Link to={'/'}>Home</Link></li>
           </ul>
 
           {/* insert a icon & input it top */}
@@ -147,7 +147,9 @@ const Header = () => {
                   <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>Menu</li>
                   <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>About Us</li>
                   <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>Srvices</li>
-                  <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>Home</li>
+                  <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>
+                    <Link to={'/'}>Home</Link>
+                  </li>
                 </ul>
 
                 <p className='m-2 p-2 flex items-center justify-center gap-3 cursor-pointer bg-slate-200 rounded-md hover:bg-gray-300 transition-all duration-100 ease-in-out text-textColor text-base' onClick={logout}>

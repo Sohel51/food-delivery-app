@@ -13,13 +13,13 @@ const RowContainer = ({ flag, data, scrollValue }) => {
     return (
         <div
             ref={rowContainer}
-            className={`w-full my-12 flex gap-10 items-center scroll-smooth ${flag ? "overflow-x-scroll scrollbar-none" : "overflow-x-hidden flex-wrap"}`
+            className={`w-full my-24 grid grid-cols-3 gap-10 items-center scroll-smooth ${flag ? "overflow-x-scroll scrollbar-none" : "overflow-x-hidden"}`
             }>
             {data && data.map(item => (
                 <div
                     key={item.id}
                     className="w-400 min-w[400px] my-12 md:w-330 md:min-w[300px] h-auto bg-cardOverlay rounded-lg p-2 backdrop-blur-lg hover:drop-shadow-lg">
-                    <div className="w-full flex items-center justify-between">
+                    <div className="w-full h-40 flex items-center justify-between">
                         <motion.img
                             whileHover={{ scale: 1.2 }}
                             className='w-40 -mt-8 drop-shadow-2xl'

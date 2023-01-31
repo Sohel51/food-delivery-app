@@ -146,7 +146,7 @@ const Header = () => {
                 <ul className="flex flex-col">
                   <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>Menu</li>
                   <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>About Us</li>
-                  <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>Srvices</li>
+                  <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>Services</li>
                   <li className='text-base text-textColor hover:text-headingColor duration-100 ease-in-out cursor-pointer px-4 py-2 hover:bg-slate-100'>
                     <Link to={'/'}>Home</Link>
                   </li>
